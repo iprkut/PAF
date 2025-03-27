@@ -19,13 +19,13 @@ akceleracija=[]
 
 x = x0
 v = v0
-for i in range(len(t)):
+for i in t:
     if i == 0:
         brzine.append(v0)
         pomaci.append(x0)
         akceleracija.append(a)
     else:
-        v = v + a * dt  
+        v = v + a * dt 
         x = x + v * dt + 0.5 * a * dt**2  
         brzine.append(v)
         pomaci.append(x)
