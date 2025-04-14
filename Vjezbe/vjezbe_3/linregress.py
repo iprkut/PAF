@@ -3,8 +3,8 @@
 import matplotlib.pyplot as plt
 import math
 
-M = [0.052, 0.124, 0.168, 0.236, 0.284, 0.336]  
-phi = [0.1745, 0.3491, 0.5236, 0.6981, 0.8727, 1.0472]  
+M = [0.052, 0.124, 0.168, 0.236, 0.284, 0.336] #Nm 
+phi = [0.1745, 0.3491, 0.5236, 0.6981, 0.8727, 1.0472] #rad 
 n = len(phi)
 
 
@@ -17,8 +17,7 @@ a = sum_xy / sum_x2
 
 sigma_a = math.sqrt((1/n) * ((sum_y2 / sum_x2) - a**2))
 
-print(f"Modul torzije Dt = {a:.5f} Nm/rad")
-print(f"Standardna pogreška σa = {sigma_a:.5f} Nm/rad")
+
 print(a,sigma_a)
 
 M_fit = [a * x for x in phi]
@@ -28,5 +27,5 @@ plt.plot(phi, M_fit, '-')
 plt.xlabel('Kut φ (rad)')
 plt.ylabel('Moment M (Nm)')
 
-plt.legend()
+
 plt.show()
