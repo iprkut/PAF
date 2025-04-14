@@ -11,4 +11,4 @@ print(racunanje(200))
 print(racunanje(2000))
 print(racunanje(20000))
 
-#Rezultat je u sva tri slučaja trebao biti 5, ali zbog nepreciznosti računala dobije se različiti rezultat
+#Rezultat je u sva tri slučaja trebao biti 5, ali zbog nepreciznosti računala dobiju se različiti rezultati
