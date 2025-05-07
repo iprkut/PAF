@@ -1,7 +1,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from calculus2 import pravokutna_aproksimacija, trapezna_metoda
+from calculus import pravokutna_aproksimacija, trapezna_metoda
 
 
 def funkcija(x):
